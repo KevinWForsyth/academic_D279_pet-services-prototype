@@ -1,6 +1,6 @@
 # D279 - User Interface Design
 
-WGU coursework. Pet services marketing prototype.
+WGU coursework. Pet services marketing prototype. A simple entry level project.
 
 **[View the live site](https://kevinwforsyth.github.io/academic_D279_pet-services-prototype/)**
 
