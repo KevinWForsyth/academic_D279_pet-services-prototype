@@ -1,8 +1,20 @@
+# D279 - User Interface Design
 
-**[academic_D279_pet-services-prototype](https://kevinwforsyth.github.io/academic_D279_pet-services-prototype/)**
+WGU coursework. Pet services marketing prototype.
 
-**[academic_D277_multipage-website] (https://kevinwforsyth.github.io/academic_D277_multipage-website/)**
+**[View the live site](https://kevinwforsyth.github.io/academic_D279_pet-services-prototype/)**
 
-**[academic_D280_world-map-svg](https://kevinwforsyth.github.io/academic_D280_world-map-svg/)**
+A five-page marketing site for Paradigm Pet Professionals, a fictional pet
+care consultancy. Built to demonstrate user interface design principles:
+visual hierarchy, consistent navigation, responsive layout, and modal
+interaction patterns for login and consultation scheduling.
 
-**[academic_D479_user-experience-design](https://kevinwforsyth.github.io/academic_D479_user-experience-design/)**
+Wireframes produced in Figma are included in the repository alongside the
+implementation.
+
+**Built with:** HTML, CSS, JavaScript
+
+**Note:** `index.html` is a redirect to `Home.html`, added so GitHub Pages
+serves the site correctly. The submitted coursework is otherwise unchanged.
+
+**Status:** Archived academic work. Preserved as submitted, not maintained.
