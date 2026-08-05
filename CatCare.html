@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="search.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Care - Paradigm Pet Professionals</title>
+    <link rel="stylesheet" href="css_files/universal.css">
+    <link rel="stylesheet" href="css_files/style.css"> <!-- Include the style.css file for the modal -->
+</head>
+<body>
+    <!-- Header -->
+    <img src="img_files/PPPLogopng.png" alt="Paradigm Pet Professionals Logo" id="top-logo">
+    <header>
+        <div class="topnav">
+            <div class="left-nav">
+                <a href="Home.html">Home</a>
+                <a href="DogCare.html">Dogs</a>
+                <a href="CatCare.html" class="active">Cats</a> <!-- Link to Cat Care Page -->
+                <a href="BirdCare.html">Birds</a>
+                <a href="FAQ.html">FAQ</a>
+            </div>
+
+            <div class="center-space"></div>
+
+            <div class="right-nav">
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" placeholder="Search pets...">
+                    <button type="submit">Search</button>
+                </div>
+
+                <!-- Login Button -->
+                <a href="#login" class="login-btn">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="introduction">
+            <h1>Welcome to Cat Care</h1>
+            <p class="slogan">Expert Advice for a Happy, Healthy Cat</p>
+            <p>Cats have been companions to humans for thousands of years, originating in ancient Egypt and later becoming domesticated in various parts of the world. Today, they are one of the most popular pets worldwide. While there are over 60 breeds of cats, the basics of care for a healthy and happy feline are generally the same across all breeds.</p>
+            <br>
+        </section>
+
+        <!-- Cat Care Details Section -->
+        <section id="cat-care-details">
+            <h2>Cat Care Essentials</h2>
+            <p>Understanding your cat's needs at every stage of life is essential to keeping them healthy and content. Below is a guide on how to care for your cat as they grow:</p>
+            <br>
+
+            <h3>Zero to Four Weeks</h3>
+            <p>During this period, it’s crucial for the queen (mother cat) to nurse her young directly. Monitor the kittens closely to ensure they are gaining weight at an appropriate rate. If a kitten is not growing properly, consider hand-feeding them using a bottle or a feeding tube. Possible reasons for slow growth include competition for milk, gastrointestinal diseases, or environmental factors like extreme temperatures or unsanitary conditions.</p>
+            <br>
+
+            <h3>Four Weeks to One Year</h3>
+            <p>As kittens start to grow, they can be introduced to soft wet kitten food around 3-4 weeks of age. According to the ASPCA, at this stage, kittens should consume half to one cup of dry kitten food or 6-9 ounces of wet kitten food daily. If they struggle with hard food, adding water to soften it is a helpful approach. A kitten-specific diet provides the essential nutrients needed for their rapid growth and energy needs. Always consult your vet for specific dietary advice, as some breeds may have unique requirements.</p>
+            <br>
+
+            <h3>One Year to Seven Years</h3>
+            <p>At this stage, your cat is no longer a kitten, and its nutritional needs shift. As they reach adulthood, their activity level typically decreases, which also reduces their metabolism. It's important to avoid leaving food out all day, as free-feeding can lead to obesity. Instead, offer meals at scheduled times to maintain a healthy weight and avoid overeating. Providing a balanced diet during this period will help your cat maintain a healthy lifestyle.</p>
+            <br>
+
+            <h3>Seven Years and More</h3>
+            <p>As your cat ages, its body undergoes many changes, and its dietary needs evolve. Older cats require less fat and fewer calories but need more high-quality protein. When purchasing cat food, look for specific protein sources, such as "salmon" or "chicken," rather than generic categories like "fish" or "poultry," which often refer to lower-quality, by-product proteins. Your vet can provide more guidance on feeding older cats to ensure they stay healthy and happy into their senior years.</p>
+            <br>
+        </section>
+
+        <!-- Call to Action -->
+        <section id="consult">
+            <h2>Need Advice? Book a Virtual Consultation</h2>
+            <p>Our experts are ready to help you with any pet-related questions. Get in touch with a professional today!</p>
+            <a href="#" class="consultation-btn">Schedule a Consultation</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Paradigm Pet Professionals. All Rights Reserved.</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </footer>
+
+    <!-- Modal Structure -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <h2>Paradigm Pet Professionals</h2>
+            
+            <div class="login-section">
+                <h3>Already have an account? Login here:</h3>
+                <form action="/submit-login" method="POST">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+
+            <hr>
+
+            <div class="signup-section">
+                <h3>Or sign up here:</h3>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Schedule Consultation Modal -->
+    <div id="consultationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="consultationCloseBtn">&times;</span>
+            <h2>Schedule a Consultation</h2>
+            <p>
+                Please fill out our contact form to request a consultation. We will contact you within 48 hours to schedule a consultation. All fields are required.
+            </p>
+            <form id="consultationForm" action="/submit-consultation" method="POST">
+                <!-- User Info -->
+                <fieldset>
+                    <legend>Your Information</legend>
+                    <label for="userName">Name:</label>
+                    <input type="text" id="userName" name="userName" placeholder="Your Name" required>
+
+                    <label for="userPhone">Phone Number:</label>
+                    <input type="tel" id="userPhone" name="userPhone" placeholder="Your Phone Number" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 123-456-7890">
+
+                    <label for="userEmail">Email Address:</label>
+                    <input type="email" id="userEmail" name="userEmail" placeholder="Your Email Address" required>
+
+                    <label for="userTimezone">Time Zone:</label>
+                    <select id="userTimezone" name="userTimezone" required>
+                        <option value="" disabled selected>Select your time zone</option>
+                        <option value="EST">Eastern Standard Time (EST)</option>
+                        <option value="CST">Central Standard Time (CST)</option>
+                        <option value="MST">Mountain Standard Time (MST)</option>
+                        <option value="PST">Pacific Standard Time (PST)</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </fieldset>
+
+                <!-- Pet Info -->
+                <fieldset>
+                    <legend>Your Pet's Information</legend>
+                    <label for="petName">Pet's Name:</label>
+                    <input type="text" id="petName" name="petName" placeholder="Pet's Name" required>
+
+                    <label for="petType">Pet's Type:</label>
+                    <input type="text" id="petType" name="petType" placeholder="e.g., Dog, Cat, Bird" required>
+
+                    <label for="petAge">Pet's Age:</label>
+                    <input type="number" id="petAge" name="petAge" placeholder="Pet's Age in Years" min="0" step="1" required>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit Consultation Request</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+<script src="js_files/login.js"></script>
+<script src="js_files/search.js"></script>
+</html>

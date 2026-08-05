@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="search.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradigm Pet Professionals - FAQ</title>
+    <link rel="stylesheet" href="css_files/universal.css">
+    <link rel="stylesheet" href="css_files/style.css"> <!-- Include the style.css file for the modal -->
+</head>
+
+<body>
+    <!-- Header -->
+    <img src="img_files/PPPLogopng.png" alt="Paradigm Pet Professionals Logo" id="top-logo">
+
+    <header>
+        <div class="topnav">
+            <div class="left-nav">
+                <a href="Home.html">Home</a>
+                <a href="DogCare.html">Dogs</a>
+                <a href="CatCare.html">Cats</a>
+                <a href="BirdCare.html">Birds</a>
+                <a href="FAQ.html" class="active">FAQ</a>
+            </div>
+
+            <div class="center-space"></div>
+
+            <div class="right-nav">
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" placeholder="Search pets...">
+                    <button type="submit">Search</button>
+                </div>
+
+                <!-- Login Button -->
+                <a href="#login" class="login-btn">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="introduction">
+            <h1>Frequently Asked Questions (FAQ)</h1>
+            <p class="slogan">Get the best answers for your pet care questions</p>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq">
+            <p>Our “Pexperts” typically encounter the following questions when consulting with prospective “pet parents:”</p>
+            <br>
+            <br>
+            <ul>
+                <li>
+                    <strong>Question: What is the best way to rid my dog or cat of fleas?</strong>
+                    <br>
+                    <br>
+                    <p>Sometimes our furry friends pick up hitchhikers that make them very itchy and uncomfortable. If gone unchecked, fleas can infest your home, making it even more difficult to rid them from your loved one’s coat. To eliminate fleas, choose a shampoo specially formulated to kill fleas and be sure to read and follow all instructions on the label. Repeat treatment as necessary until your pet is free of fleas; if you see skin irritation, stop use immediately and contact your local vet.</p>
+                </li>
+                <br>
+                <li>
+                    <strong>Question: How long can I expect my pet bird to live?</strong>
+                    <br>
+                    <br>
+                    <p>The answer can vary widely depending on the type of bird, the size, the environment, and of course, mother nature. Assuming all is well in the external factors that are out of the owner's control, cockatiels and budgies live up to 20 years old on average. However, many parrot variations are known to live nearly an astounding 100 years! As with many living organisms, longevity can be increased by keeping annual veterinarian visits, maintaining a healthy diet, and keeping your feathery friend's environment sanitary.</p>
+                </li>
+                <br>
+                <li>
+                    <strong>Question: How often should I feed my pet snake?</strong>
+                    <br>
+                    <br>
+                    <p>Most snakes eat one to two times per week, depending on their age, size, and activity level. Female snakes often increase their food intake as breeding season gets underway. Some snakes can go as long as two weeks before needing their next meal; this is normal. However, if your snake has not eaten in two or three weeks and seems lethargic, reach out to your local vet to determine if your snake might be ill or injured.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Call to Action -->
+        <section id="consult">
+            <h2>Need Advice? Book a Virtual Consultation</h2>
+            <p>Our experts are ready to help you with any pet-related questions. Get in touch with a professional today!</p>
+            <a href="#" class="consultation-btn">Schedule a Consultation</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Paradigm Pet Professionals. All Rights Reserved.</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </footer>
+
+    <!-- Modal Structure -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <h2>Paradigm Pet Professionals</h2>
+
+            <div class="login-section">
+                <h3>Already have an account? Login here:</h3>
+                <form action="/submit-login" method="POST">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+
+            <hr>
+
+            <div class="signup-section">
+                <h3>Or sign up here:</h3>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Schedule Consultation Modal -->
+    <div id="consultationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="consultationCloseBtn">&times;</span>
+            <h2>Schedule a Consultation</h2>
+            <p>
+                Please fill out our contact form to request a consultation. We will contact you within 48 hours to
+                schedule a consultation. All fields are required.
+            </p>
+            <form id="consultationForm" action="/submit-consultation" method="POST">
+                <!-- User Info -->
+                <fieldset>
+                    <legend>Your Information</legend>
+                    <label for="userName">Name:</label>
+                    <input type="text" id="userName" name="userName" placeholder="Your Name" required>
+
+                    <label for="userPhone">Phone Number:</label>
+                    <input type="tel" id="userPhone" name="userPhone" placeholder="Your Phone Number" required
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 123-456-7890">
+
+                    <label for="userEmail">Email Address:</label>
+                    <input type="email" id="userEmail" name="userEmail" placeholder="Your Email Address" required>
+
+                    <label for="userTimezone">Time Zone:</label>
+                    <select id="userTimezone" name="userTimezone" required>
+                        <option value="" disabled selected>Select your time zone</option>
+                        <option value="EST">Eastern Standard Time (EST)</option>
+                        <option value="CST">Central Standard Time (CST)</option>
+                        <option value="MST">Mountain Standard Time (MST)</option>
+                        <option value="PST">Pacific Standard Time (PST)</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </fieldset>
+
+                <!-- Pet Info -->
+                <fieldset>
+                    <legend>Your Pet's Information</legend>
+                    <label for="petName">Pet's Name:</label>
+                    <input type="text" id="petName" name="petName" placeholder="Pet's Name" required>
+
+                    <label for="petType">Pet's Type:</label>
+                    <input type="text" id="petType" name="petType" placeholder="e.g., Dog, Cat, Bird" required>
+
+                    <label for="petAge">Pet's Age:</label>
+                    <input type="number" id="petAge" name="petAge" placeholder="Pet's Age in Years" min="0" step="1"
+                        required>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit Consultation Request</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+<script src="js_files/login.js"></script>
+<script src="js_files/search.js"></script>
+
+</html>

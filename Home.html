@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradigm Pet Professionals</title>
+    <link rel="stylesheet" href="css_files/universal.css">
+    <link rel="stylesheet" href="css_files/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <img src="img_files/PPPLogopng.png" alt="Paradigm Pet Professionals Logo" id="top-logo">
+    <header>
+        <div class="topnav">
+            <div class="left-nav">
+                <a href="Home.html" class="active">Home</a>
+                <a href="DogCare.html">Dogs</a>
+                <a href="CatCare.html">Cats</a>
+                <a href="BirdCare.html">Birds</a>
+                <a href="FAQ.html">FAQ</a>
+            </div>
+
+            <div class="center-space"></div>
+
+            <div class="right-nav">
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" placeholder="Search pets...">
+                    <button type="submit">Search</button>
+                </div>
+
+                <!-- Login Button -->
+                <a href="javascript:void(0);" id="loginBtn" class="login-btn">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="introduction">
+            <h1>Welcome to Paradigm Pet Professionals</h1>
+            <p class="slogan">Evidence-based pet care advice for every pet lover</p>
+            <p>Paradigm Pet Professionals has 12 years’ experience working with pet owners, certifications in pet health and nutrition, and customer recognition for outstanding support.</p>
+        </section>
+
+        <!-- Pet Service -->
+        <section id="services">
+            <div class="service-box">
+                <h3>For Dogs</h3>
+                <img src="img_files/HappyFluffyDog.jpg" alt="Happy Dog" class="pet">
+                <p>Discover the best care for your dog, including nutrition, exercise, and health advice tailored to every stage of their life.</p>
+            </div>
+            <div class="service-box">
+                <h3>For Cats</h3>
+                <img src="img_files/CuteCat.jpg" alt="Cute Cat" class="pet">
+                <p>Get expert guidance on feeding, grooming, and keeping your cat healthy and happy. We have tips for every type of cat!</p>
+            </div>
+            <div class="service-box">
+                <h3>For Birds</h3>
+                <img src="img_files/PetBird.jpg" alt="Bird perched" class="pet">
+                <p>Learn how to keep your bird thriving, from diet to mental stimulation and exercise needs. Your bird's well-being is our priority.</p>
+            </div>
+        </section>
+
+        <section id="mission">
+            <h2>Our Mission</h2>
+            <hr>
+            <p>Pets are nature's gift to humanity. It has been scientifically proven that opening our homes and hearts to a pet increases our longevity and improves our overall quality of life as well as the lives of our pets. At Pet Paradigm Professionals, our mission is to offer resources to help you care for your furry, scaly, feathery, and slimy loved ones. Our pet experts—or “Pexperts”—have been working with pet owners and professionals alike for the past twelve years. They offer one-on-one consultations with current and prospective pet owners as well as group presentations designed for veterinary, pet shelter, and pet breeding professionals.</p>
+
+            <p>Looking for basic pet care advice for the most common type of pets? Need additional help determining which type of pet is right for you and your family? We will work with you and provide tailored evidence-based pet care to ensure lifelong health and wellness of your new companion.</p>
+
+            <p>Looking for your new best friend? The following organizations can help you find and adopt the perfect companion:</p>
+
+            <ul>
+                <li><a href="https://bestfriends.org/pet-care-resources/issues/pet-adoption-resources" target="_blank">General Pet Resources</a></li>
+                <li><a href="https://www.aspca.org/" target="_blank">ASPCA</a></li>
+                <li><a href="https://www.sterlingshelter.org/humane-society/koi-fish-rescue/" target="_blank">Fish Rescue</a></li>
+                <li><a href="https://savethesnakes.org/snakerescuecall/" target="_blank">Snake Rescue</a></li>
+                <li><a href="https://ftlob.rescuegroups.org/" target="_blank">Bird Rescue</a></li>
+            </ul>
+            
+
+            <p>We are also happy to help you navigate the adoption process! We will guide you through each step in the process from determining which type of pet is best suited for your family and home environment, to completing the necessary paperwork, to bringing your new loved one home. Please fill out our contact form to request a consultation. We will contact you within 48 hours to schedule a consultation. All fields are required.</p>
+            <hr>
+        </section>
+        
+        <section id="consult">
+            <h2>Need Advice? Book a Virtual Consultation</h2>
+            <p>Our experts are ready to help you with any pet-related questions. Get in touch with a professional today!</p>
+            <a href="#" class="consultation-btn">Schedule a Consultation</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Paradigm Pet Professionals. All Rights Reserved.</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </footer>
+
+    <!-- Modal Structure -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <h2>Paradigm Pet Professionals</h2>
+            
+            <div class="login-section">
+                <h3>Already have an account? Login here:</h3>
+                <form action="/submit-login" method="POST">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+
+            <hr>
+
+            <div class="signup-section">
+                <h3>Or sign up here:</h3>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Schedule Consultation Modal -->
+    <div id="consultationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="consultationCloseBtn">&times;</span>
+            <h2>Schedule a Consultation</h2>
+            <p>
+                Please fill out our contact form to request a consultation. We will contact you within 48 hours to schedule a consultation. All fields are required.
+            </p>
+            <form id="consultationForm" action="/submit-consultation" method="POST">
+                <!-- User Info -->
+                <fieldset>
+                    <legend>Your Information</legend>
+                    <label for="userName">Name:</label>
+                    <input type="text" id="userName" name="userName" placeholder="Your Name" required>
+
+                    <label for="userPhone">Phone Number:</label>
+                    <input type="tel" id="userPhone" name="userPhone" placeholder="Your Phone Number" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 123-456-7890">
+
+                    <label for="userEmail">Email Address:</label>
+                    <input type="email" id="userEmail" name="userEmail" placeholder="Your Email Address" required>
+
+                    <label for="userTimezone">Time Zone:</label>
+                    <select id="userTimezone" name="userTimezone" required>
+                        <option value="" disabled selected>Select your time zone</option>
+                        <option value="EST">Eastern Standard Time (EST)</option>
+                        <option value="CST">Central Standard Time (CST)</option>
+                        <option value="MST">Mountain Standard Time (MST)</option>
+                        <option value="PST">Pacific Standard Time (PST)</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </fieldset>
+
+                <!-- Pet Info -->
+                <fieldset>
+                    <legend>Your Pet's Information</legend>
+                    <label for="petName">Pet's Name:</label>
+                    <input type="text" id="petName" name="petName" placeholder="Pet's Name" required>
+
+                    <label for="petType">Pet's Type:</label>
+                    <input type="text" id="petType" name="petType" placeholder="e.g., Dog, Cat, Bird" required>
+
+                    <label for="petAge">Pet's Age:</label>
+                    <input type="number" id="petAge" name="petAge" placeholder="Pet's Age in Years" min="0" step="1" required>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit Consultation Request</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+<script src="js_files/login.js"></script>
+<script src="js_files/search.js"></script>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="search.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Care - Paradigm Pet Professionals</title>
+    <link rel="stylesheet" href="css_files/universal.css">
+    <link rel="stylesheet" href="css_files/style.css"> <!-- Include the style.css file for the modal -->
+</head>
+<body>
+    <!-- Header -->
+    <img src="img_files/PPPLogopng.png" alt="Paradigm Pet Professionals Logo" id="top-logo">
+    <header>
+        <div class="topnav">
+            <div class="left-nav">
+                <a href="Home.html">Home</a>
+                <a href="DogCare.html" class="active">Dogs</a> <!-- Link to Dog Care Page -->
+                <a href="CatCare.html">Cats</a>
+                <a href="BirdCare.html">Birds</a>
+                <a href="FAQ.html">FAQ</a>
+            </div>
+
+            <div class="center-space"></div>
+
+            <div class="right-nav">
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" placeholder="Search pets...">
+                    <button type="submit">Search</button>
+                </div>
+
+                <!-- Login Button -->
+                <a href="#login" class="login-btn">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="introduction">
+            <h1>Welcome to Dog Care</h1>
+            <p class="slogan">Expert Advice for a Happy, Healthy Dog</p>
+            <p>The domestic dog is an extremely social animal, offering a diverse variety of choices as there are over 300 breeds recognized by the World Canine Organization. Adopting a dog brings mutual benefits for both the dog and the owner. Many studies highlight the social benefits of having a companion and the reduction of loneliness. Additionally, adopting a dog has medical benefits, such as reduced blood pressure and improved lipid profiles. As a dog owner, it’s essential to care for your dog by providing proper nutrition and ample opportunities for exercise. This page will help you with essential tips on caring for your dog through the various stages of their life.</p>
+            <br>
+        </section>
+
+        <!-- Dog Care Details Section -->
+        <section id="dog-care-details">
+            <h2>Dog Care Essentials</h2>
+            <p>Throughout your dog's lifespan, it's crucial to pay attention to their diet, exercise, grooming, and overall health. Let's dive into these important aspects of dog care:</p>
+            <br>
+
+            <h3>Diet & Exercise</h3>
+            <p>Dogs' nutritional needs change as they age. Puppies should be nursed for the first two months and then transitioned to three meals per day when they are about three to six months old. By the time they reach six months to one year, they should transition to two meals per day, and eventually, to one meal per day after one year. Hydration is just as important; a dog’s typical body mass is composed of 60-70% water, and dehydration can lead to illness or even death. Make sure your dog has access to clean water at all times!</p>
+            <br>
+            <p>Exercise is key to maintaining your dog’s health. The amount of exercise varies depending on breed and size, but generally, dogs need 30–120 minutes of exercise per day. Exercise doesn’t mean strenuous workouts — brisk walks are great too! You can also use toys to encourage physical activity, but ensure they are safe and age-appropriate for your dog.</p>
+            <br>
+
+            <h3>Grooming & Handling</h3>
+            <p>Regular grooming is essential for your dog’s well-being. Brush your dog frequently to reduce shedding and prevent mats in the fur. Pay special attention to ticks and fleas, especially after outdoor excursions. Bathing is another important grooming activity, but be cautious with soap products. Make sure to use dog-formulated shampoos to avoid skin irritation, and always rinse thoroughly to remove soap residue.</p>
+            <br>
+            <p>Proper handling of your dog is essential for both you and your dog’s safety. Whether small or large, be gentle when carrying or lifting your dog. For small dogs, support them under the chest, and for larger dogs, use both arms to support their chest and rear.</p>
+            <br>
+
+            <h3>Vaccinations & Medications</h3>
+            <p>Consult with your veterinarian for the necessary vaccinations and medications for your dog. Core vaccines typically include those for rabies, hepatitis, and parvovirus. Additional vaccines, such as Bordetella bronchiseptica, Borrelia burgdorferi, and Leptospira bacteria, may be recommended based on your dog's environment and lifestyle.</p>
+            <br>
+        </section>
+
+        <!-- Call to Action -->
+        <section id="consult">
+            <h2>Need Advice? Book a Virtual Consultation</h2>
+            <p>Our experts are ready to help you with any pet-related questions. Get in touch with a professional today!</p>
+            <a href="#" class="consultation-btn">Schedule a Consultation</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Paradigm Pet Professionals. All Rights Reserved.</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </footer>
+
+    <!-- Modal Structure -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <h2>Paradigm Pet Professionals</h2>
+            
+            <div class="login-section">
+                <h3>Already have an account? Login here:</h3>
+                <form action="/submit-login" method="POST">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+
+            <hr>
+
+            <div class="signup-section">
+                <h3>Or sign up here:</h3>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Schedule Consultation Modal -->
+    <div id="consultationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="consultationCloseBtn">&times;</span>
+            <h2>Schedule a Consultation</h2>
+            <p>
+                Please fill out our contact form to request a consultation. We will contact you within 48 hours to schedule a consultation. All fields are required.
+            </p>
+            <form id="consultationForm" action="/submit-consultation" method="POST">
+                <!-- User Info -->
+                <fieldset>
+                    <legend>Your Information</legend>
+                    <label for="userName">Name:</label>
+                    <input type="text" id="userName" name="userName" placeholder="Your Name" required>
+
+                    <label for="userPhone">Phone Number:</label>
+                    <input type="tel" id="userPhone" name="userPhone" placeholder="Your Phone Number" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 123-456-7890">
+
+                    <label for="userEmail">Email Address:</label>
+                    <input type="email" id="userEmail" name="userEmail" placeholder="Your Email Address" required>
+
+                    <label for="userTimezone">Time Zone:</label>
+                    <select id="userTimezone" name="userTimezone" required>
+                        <option value="" disabled selected>Select your time zone</option>
+                        <option value="EST">Eastern Standard Time (EST)</option>
+                        <option value="CST">Central Standard Time (CST)</option>
+                        <option value="MST">Mountain Standard Time (MST)</option>
+                        <option value="PST">Pacific Standard Time (PST)</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </fieldset>
+
+                <!-- Pet Info -->
+                <fieldset>
+                    <legend>Your Pet's Information</legend>
+                    <label for="petName">Pet's Name:</label>
+                    <input type="text" id="petName" name="petName" placeholder="Pet's Name" required>
+
+                    <label for="petType">Pet's Type:</label>
+                    <input type="text" id="petType" name="petType" placeholder="e.g., Dog, Cat, Bird" required>
+
+                    <label for="petAge">Pet's Age:</label>
+                    <input type="number" id="petAge" name="petAge" placeholder="Pet's Age in Years" min="0" step="1" required>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit Consultation Request</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+<script src="js_files/login.js"></script>
+<script src="js_files/search.js"></script>
+</html>

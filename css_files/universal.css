@@ -1,0 +1,370 @@
+/* ------------------------------ GENERAL SETTINGS ------------------------------ */
+* {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+  margin: 0;
+  background: linear-gradient(45deg, #6699CC, #003B6D);
+  color: #333;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+ul {
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+ul li {
+  list-style-position: outside;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.indented-list {
+  padding-left: 30px;
+}
+
+.indented-list li {
+  margin-bottom: 8px;
+  padding-left: 15px;
+}
+
+.highlighted {
+  background-color: yellow;
+}
+
+/* ------------------------------ LOGO STYLING ------------------------------ */
+#top-logo {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  height: 100px;
+  width: auto;
+  z-index: 10;
+  transition: transform 0.3s ease;
+}
+
+/* ------------------------------ NAVBAR STYLES ------------------------------ */
+.topnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-left: 120px;
+}
+
+.topnav .left-nav,
+.topnav .right-nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.topnav a {
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.topnav a:hover {
+  background-color: #2196F3;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.topnav .search-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.topnav input[type="text"] {
+  padding: 6px;
+  font-size: 17px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border 0.3s ease;
+  flex-grow: 1;
+}
+
+.topnav input[type="text"]:focus {
+  border: 2px solid #2196F3;
+  outline: none;
+}
+
+.topnav button[type="submit"] {
+  padding: 6px 12px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.topnav button[type="submit"]:hover {
+  background: #ccc;
+}
+
+/* Login Button */
+a.login-btn {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: #4CAF50;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+a.login-btn:hover {
+  background-color: #45a049;
+}
+
+a.login-btn:active {
+  transform: scale(0.98);
+}
+
+/* ------------------------------ MAIN CONTENT STYLES ------------------------------ */
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Intro Section */
+section#introduction {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+section#introduction h1 {
+  font-size: 32px;
+}
+
+section#introduction .slogan {
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+/* Service Section */
+section#services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.service-box {
+  flex: 1 1 calc(30% - 20px);
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.service-box img {
+  border-radius: 15px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.service-box p {
+  margin-top: 15px;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Mission Section */
+section#mission {
+  margin-top: 40px;
+}
+
+section#mission hr {
+  border: none;
+  border-top: 2px solid #000000;
+  margin: 20px 0;
+  width: 100%;
+}
+
+#mission p {
+  margin-bottom: 20px;
+}
+
+#mission ul {
+  margin-left: 20px;
+  margin-top: 20px;
+  padding-left: 10px;
+  list-style-position: inside;
+}
+
+#mission ul li {
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+/* Consult Section */
+section#consult {
+  text-align: center;
+  margin-top: 50px;
+}
+
+section#consult h2 {
+  font-size: 28px;
+}
+
+section#consult a {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  background-color: #2196F3;
+  padding: 15px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+section#consult a:hover {
+  background-color: #0d47a1;
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+section#consult a:active {
+  transform: translateY(0px);
+}
+
+section#consult p {
+  margin-bottom: 40px;
+}
+
+/* ------------------------------ FOOTER STYLES ------------------------------ */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #2196F3;
+}
+
+footer ul li a:active {
+  transform: scale(0.98);
+}
+
+/* ------------------------------ CONSULTATION BUTTON STYLES ------------------------------ */
+section#consult a {
+  position: fixed;
+  bottom: 120px;
+  left: 50%;
+  z-index: 10;
+}
+
+/* ------------------------------ RESPONSIVE DESIGN ------------------------------ */
+@media (max-width: 768px) {
+  .topnav {
+    flex-wrap: wrap;
+  }
+
+  .left-nav,
+  .right-nav {
+    flex: 1 1 100%;
+  }
+
+  .right-nav {
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+
+  .search-container {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  section#consult a {
+    bottom: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+  section#services {
+    display: block;
+    padding: 0;
+  }
+
+  .service-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .service-box p {
+    text-align: center;
+  }
+
+  section#consult a {
+    font-size: 18px;
+  }
+}

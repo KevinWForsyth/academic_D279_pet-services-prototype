@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="search.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bird Care - Paradigm Pet Professionals</title>
+    <link rel="stylesheet" href="css_files/universal.css">
+    <link rel="stylesheet" href="css_files/style.css"> <!-- Include the style.css file for the modal -->
+</head>
+
+<body>
+    <!-- Header -->
+    <img src="img_files/PPPLogopng.png" alt="Paradigm Pet Professionals Logo" id="top-logo">
+    <header>
+        <div class="topnav">
+            <div class="left-nav">
+                <a href="Home.html">Home</a> <!-- Link to Home -->
+                <a href="DogCare.html">Dogs</a> <!-- Link to Dog Care Page -->
+                <a href="CatCare.html">Cats</a>
+                <a href="BirdCare.html" class="active">Birds</a>
+                <a href="FAQ.html">FAQ</a>
+            </div>
+
+            <div class="center-space"></div>
+
+            <div class="right-nav">
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" placeholder="Search pets...">
+                    <button type="submit">Search</button>
+                </div>
+
+                <!-- Login Button -->
+                <a href="#login" class="login-btn">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="introduction">
+            <h1>Welcome to Bird Care</h1>
+            <p class="slogan">Learn How to Keep Your Feathered Friend Healthy and Happy</p>
+            <p>Birds are fascinating creatures, with sizes ranging from the tiny Cuban bee hummingbird (about 2 inches
+                long) to the large and majestic ostrich. While most birds are capable of flight, some species like
+                ostriches and penguins do not. Despite their vast differences, all bird species have unique care needs,
+                especially when it comes to their social well-being. Birds can experience emotional distress such as
+                sadness and depression, and recognizing the signs of these conditions is crucial for their health and
+                longevity.</p>
+            <br>
+        </section>
+
+        <!-- Bird Care Details Section -->
+        <section id="bird-care-details">
+            <h2>Bird Care and Well-Being</h2>
+            <p>Birds are social animals and can experience emotional stress if their needs are not met. Here are some
+                important points to keep in mind when caring for your feathered companion:</p>
+            <br>
+
+            <h3>Signs of Bird Depression</h3>
+            <p>Just like humans, birds can suffer from depression, and it is essential to recognize the symptoms early.
+                Depression in birds can be triggered by a number of factors, including illness (physical or mental), the
+                loss of a companion, or boredom. If you notice any of the following signs in your bird, it may be a sign
+                of depression:</p>
+
+            <ul class="indented-list">
+                <li>Reduced appetite</li>
+                <li>Increased irritability</li>
+                <li>Aggressive behavior</li>
+                <li>Songs with a more somber tone</li>
+            </ul>
+            <br>
+
+            <p>If you notice any of these symptoms, it's important to consult your veterinarian as soon as possible.
+                Identifying the problem early and providing appropriate treatment can greatly improve your bird's
+                quality of life and longevity.</p>
+            <br>
+
+            <h3>How to Help a Depressed Bird</h3>
+            <p>Helping your bird recover from depression involves a combination of addressing the root causes and
+                offering emotional support:</p>
+
+            <ul class="indented-list">
+                <li>Ensure your bird has a stimulating environment with toys and activities to reduce boredom.</li>
+                <li>Provide social interaction and companionship, especially if your bird has lost a mate or companion.
+                </li>
+                <li>Offer a balanced diet, as nutritional deficiencies can contribute to mood changes.</li>
+                <li>Provide a quiet and comfortable space for your bird to relax and feel safe.</li>
+                <li>If the symptoms persist, consult your veterinarian to rule out any physical illnesses or conditions.
+                </li>
+            </ul>
+            <br>
+
+            <h3>Routine Veterinary Care</h3>
+            <p>Birds need regular veterinary check-ups to ensure they are in good health, both physically and
+                emotionally. A veterinarian can perform routine exams and recommend ways to maintain your bird's overall
+                health, including advice on diet, housing, and behavioral care. Regular visits can help catch any
+                underlying issues early and ensure that your bird has the best chance at a long, happy life.</p>
+            <br>
+        </section>
+
+        <!-- Call to Action -->
+        <section id="consult">
+            <h2>Need Advice? Book a Virtual Consultation</h2>
+            <p>Our experts are ready to help you with any pet-related questions. Get in touch with a professional today!
+            </p>
+            <a href="#" class="consultation-btn">Schedule a Consultation</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Paradigm Pet Professionals. All Rights Reserved.</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </footer>
+
+    <!-- Modal Structure -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <h2>Paradigm Pet Professionals</h2>
+
+            <div class="login-section">
+                <h3>Already have an account? Login here:</h3>
+                <form action="/submit-login" method="POST">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+
+            <hr>
+
+            <div class="signup-section">
+                <h3>Or sign up here:</h3>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Schedule Consultation Modal -->
+    <div id="consultationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="consultationCloseBtn">&times;</span>
+            <h2>Schedule a Consultation</h2>
+            <p>
+                Please fill out our contact form to request a consultation. We will contact you within 48 hours to
+                schedule a consultation. All fields are required.
+            </p>
+            <form id="consultationForm" action="/submit-consultation" method="POST">
+                <!-- User Info -->
+                <fieldset>
+                    <legend>Your Information</legend>
+                    <label for="userName">Name:</label>
+                    <input type="text" id="userName" name="userName" placeholder="Your Name" required>
+
+                    <label for="userPhone">Phone Number:</label>
+                    <input type="tel" id="userPhone" name="userPhone" placeholder="Your Phone Number" required
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 123-456-7890">
+
+                    <label for="userEmail">Email Address:</label>
+                    <input type="email" id="userEmail" name="userEmail" placeholder="Your Email Address" required>
+
+                    <label for="userTimezone">Time Zone:</label>
+                    <select id="userTimezone" name="userTimezone" required>
+                        <option value="" disabled selected>Select your time zone</option>
+                        <option value="EST">Eastern Standard Time (EST)</option>
+                        <option value="CST">Central Standard Time (CST)</option>
+                        <option value="MST">Mountain Standard Time (MST)</option>
+                        <option value="PST">Pacific Standard Time (PST)</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </fieldset>
+
+                <!-- Pet Info -->
+                <fieldset>
+                    <legend>Your Pet's Information</legend>
+                    <label for="petName">Pet's Name:</label>
+                    <input type="text" id="petName" name="petName" placeholder="Pet's Name" required>
+
+                    <label for="petType">Pet's Type:</label>
+                    <input type="text" id="petType" name="petType" placeholder="e.g., Dog, Cat, Bird" required>
+
+                    <label for="petAge">Pet's Age:</label>
+                    <input type="number" id="petAge" name="petAge" placeholder="Pet's Age in Years" min="0" step="1"
+                        required>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit Consultation Request</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+<script src="js_files/login.js"></script>
+<script src="js_files/search.js"></script>
+
+</html>
